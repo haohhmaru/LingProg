@@ -1,0 +1,525 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Alessandro Lima da Silva R.A 201522705 CCP3AN-MCA"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1 Faça um Programa que peça o raio de um círculo, calcule e mostre sua área. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math\n",
+    "def area(x):\n",
+    "    area=(x*x) * math.pi\n",
+    "    print(area)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "113.09733552923255\n"
+     ]
+    }
+   ],
+   "source": [
+    "area(6)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2 Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário. \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def area(x):\n",
+    "    areaquadrado = x*x\n",
+    "    print(areaquadrado)\n",
+    "    dobro = areaquadrado*2\n",
+    "    print(dobro)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "16\n",
+      "32\n"
+     ]
+    }
+   ],
+   "source": [
+    "area(4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3 Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def salario(horas,valor):\n",
+    "    return horas*valor"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2000"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "salario(20,100)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4 Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius. C = (5 * (F-32) / 9). \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def temperatura(temp):\n",
+    "    celsius = (5*(temp-32))/ 9\n",
+    "    print(celsius)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21.11111111111111\n"
+     ]
+    }
+   ],
+   "source": [
+    "temperatura(70)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "5 Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def temperatura(temp):\n",
+    "    far= (temp/5)*9 +32\n",
+    "    print(far)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "86.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "temperatura(30)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "6 Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre: - o produto do dobro do primeiro com metade do segundo . - a soma do triplo do primeiro com o terceiro. - o terceiro elevado ao cubo. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def num(x,y,z):\n",
+    "    print((x*2)*(y/2))\n",
+    "    print((3*x)+z)\n",
+    "    print((z**3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.0\n",
+      "6\n",
+      "27\n"
+     ]
+    }
+   ],
+   "source": [
+    "num(1,2,3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "7 João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e verifique se há \n",
+    "excesso. Se houver, gravar na variável excesso e na variável multa o valor da multa que João deverá pagar. Caso contrário mostrar tais variáveis com o conteúdo ZERO. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def pescador(quilos):\n",
+    "    excesso = 0\n",
+    "    multa = 0\n",
+    "    if quilos>50:\n",
+    "        excesso= quilos - 50\n",
+    "        multa = excesso * 4.0\n",
+    "    print(quilos)\n",
+    "    print(excesso)\n",
+    "    print(multa)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "60\n",
+      "10\n",
+      "40.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "pescador(60)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "8 Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê: - salário bruto. - quanto pagou ao INSS. - quanto pagou ao sindicato. - o salário líquido. - calcule os descontos e o salário líquido, conforme a tabela abaixo:            + Salário Bruto : R$            - IR (11%) : R$            - INSS (8%) : R$            - Sindicato ( 5%) : R$            = Salário Liquido : R$ Obs.: Salário Bruto - Descontos = Salário Líquido. \n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def salario(hora,valor):\n",
+    "    salariobruto = hora* valor\n",
+    "    print(salariobruto)\n",
+    "    inss = salariobruto *0.08\n",
+    "    sindicato = salariobruto*0.05\n",
+    "    imposto = salariobruto*0.11\n",
+    "    print(inss)\n",
+    "    print(sindicato)\n",
+    "    print(imposto)\n",
+    "    salarioliquido=salariobruto-inss-sindicato-imposto\n",
+    "    print(salarioliquido)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2000\n",
+      "160.0\n",
+      "100.0\n",
+      "220.0\n",
+      "1520.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "salario(10,200)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "9 Faça um programa que leia 2 strings e informe o conteúdo delas seguido do seu comprimento. Informe também se as duas strings possuem o mesmo comprimento e são iguais ou diferentes no conteúdo. Exemplo: String 1: Brasil Hexa 2018 String 2: Brasil! Hexa 2018! Tamanho de \"Brasil Hexa 2018\": 16 caracteres Tamanho de \"Brasil! Hexa 2018!\": 18 caracteres As duas strings são de tamanhos diferentes. As duas strings possuem conteúdo diferente. \n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def igual(str1,str2):\n",
+    "    print(str1)\n",
+    "    print(str2)\n",
+    "    print(len(str1))\n",
+    "    print(len(str2))\n",
+    "    if len(str1)!=len(str2):\n",
+    "        print(\"As duas strings são de tamanhos diferentes\")\n",
+    "    else:\n",
+    "        print(\"As duas strings são de tamanhos iguais\")\n",
+    "    \n",
+    "    if str1==str2:\n",
+    "        print(\"As duas strings são iguais\")\n",
+    "    else:\n",
+    "        print(\"As duas strings são diferentes\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "batata\n",
+      "batatinha\n",
+      "6\n",
+      "9\n",
+      "As duas strings são de tamanhos diferentes\n",
+      "As duas strings são diferentes\n"
+     ]
+    }
+   ],
+   "source": [
+    "igual('batata','batatinha')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "10 Faça um programa que permita ao usuário digitar o seu nome e em seguida mostre o nome do usuário de trás para frente utilizando somente letras maiúsculas. Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúsculas ou minúsculas. Observação: não use loops. \n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def tras(nome):\n",
+    "    print(nome.upper().reverse())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def rreverse(s):\n",
+    "    \n",
+    "    if s == \"\":\n",
+    "        return s\n",
+    "    else:\n",
+    "        return rreverse(s[1:]) + s[0].upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'EUAK'"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rreverse('kaue')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "11 Faça um programa que solicite a data de nascimento (dd/mm/aaaa) do usuário e imprima a data com o nome do mês por extenso. Data de Nascimento: 29/10/1973 \n",
+    "Você nasceu em  29 de Outubro de 1973. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "04/11/1998\n",
+      "04\n",
+      "11\n",
+      "1998\n",
+      "voce nasceu em  04 do 11 de 1998\n"
+     ]
+    }
+   ],
+   "source": [
+    "dia, mes,ano = input().split(\"/\")\n",
+    "print(dia)\n",
+    "print(mes)\n",
+    "print(ano)\n",
+    "\n",
+    "\n",
+    "def data(dia,mesext,ano):\n",
+    "    print(\"voce nasceu em  %s do %s de %s\" % (dia, mesext,ano))\n",
+    "    \n",
+    "data(dia,mes,ano)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "12 Leet é uma forma de se escrever o alfabeto latino usando outros símbolos em lugar das letras, como números por exemplo. A própria palavra leet admite muitas variações, como l33t ou 1337. O uso do leet reflete uma subcultura relacionada ao mundo dos jogos de computador e internet, sendo muito usada para confundir os iniciantes e afirmar-se como parte de um grupo. Pesquise sobre as principais formas de traduzir as letras. Depois, faça um programa que peça uma texto e transforme-o para a grafia leet speak. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3+ s0+ I30M\n"
+     ]
+    }
+   ],
+   "source": [
+    "replacements = ( ('bom','I30M'), ('Eu','3u'), ('a','4'), ('e','3'),\n",
+    "                 ('l','1'), ('o','0'), ('u','+') , ('sou',\"S0u\") )\n",
+    "my_string = \"Eu sou bom\"\n",
+    "new_string = my_string\n",
+    "for old, new in replacements:\n",
+    "    new_string = new_string.replace(old, new)\n",
+    "\n",
+    "print ( new_string )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
